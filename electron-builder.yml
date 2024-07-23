@@ -1,5 +1,5 @@
 appId: com.electron.app
-productName: vite-electron
+productName: vite-electron-cowin
 directories:
   buildResources: build
 files:
@@ -12,7 +12,10 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: vite-electron
+  executableName: vite-electron-cowin
+  certificateFile: private/certificate.pfx
+  certificatePassword: YourNewPfxPassword
+  verifyUpdateCodeSignature: false
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -41,3 +44,5 @@ npmRebuild: false
 publish:
   provider: generic
   url: https://example.com/auto-updates
+afterPack: ./build/afterPack.js
+afterSign: ./build/afterSign.js

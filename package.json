@@ -1,5 +1,5 @@
 {
-  "name": "vite-electron",
+  "name": "vite-electron-cowin",
   "version": "1.0.0",
   "description": "An Electron application with React and TypeScript",
   "main": "./out/main/index.js",

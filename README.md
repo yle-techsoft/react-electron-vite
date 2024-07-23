@@ -1,4 +1,4 @@
-# vite-electron
+# vite-electron-cowin
 
 An Electron application with React and TypeScript
 
